@@ -1,10 +1,21 @@
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.App-logo:hover {
+  transform: scale(1.1);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +25,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(to right, #282c34, #242830);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +37,12 @@
 
 .App-link {
   color: #61dafb;
+  transition: color 0.2s ease-in-out;
+}
+
+.App-link:hover {
+  color: #9bcaff;
+  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +52,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
 }
